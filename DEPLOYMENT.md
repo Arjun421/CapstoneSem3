@@ -58,20 +58,20 @@ git commit -m "Update API URL for production"
 git push
 ```
 
-## Step 4: Deploy Frontend on Render
+## Step 4: Deploy Frontend on Vercel
 
-1. In Render Dashboard, click "New +" → "Static Site"
-2. Connect your GitHub repository
-3. Configure:
-   - **Name**: auth-frontend
-   - **Branch**: main
-   - **Root Directory**: frontend
-   - **Build Command**: `npm install && npm run build`
-   - **Publish Directory**: dist
-
-4. Click "Create Static Site"
-5. Wait for deployment
-6. Your app is live! 🎉
+1. Go to https://vercel.com (sign up/login with GitHub)
+2. Click "Add New" → "Project"
+3. Import your GitHub repository: `Arjun421/CapstoneSem3`
+4. Configure:
+   - **Framework Preset**: Vite
+   - **Root Directory**: `frontend`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+5. Click "Deploy"
+6. Wait 2-3 minutes
+7. Your app is live! 🎉
+8. Copy your frontend URL (e.g., https://capstone-sem3.vercel.app)
 
 ## Step 5: Update CORS (Important!)
 
